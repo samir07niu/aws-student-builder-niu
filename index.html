@@ -40,9 +40,14 @@
   </header>
 
   <main id="main">
-    <!-- HERO -->
+    <!-- HERO with interactive 3D background -->
     <section class="hero" id="home">
-      <div class="container">
+      <div class="hero-bg" aria-hidden="true">
+        <canvas id="hero-3d"></canvas>
+        <div class="hero-glow hero-glow-orange"></div>
+        <div class="hero-glow hero-glow-green"></div>
+      </div>
+      <div class="container hero-content">
         <p class="eyebrow">Student community &middot; Noida International University</p>
         <h1>Learn cloud<br>by <span class="accent">building.</span></h1>
         <p class="hero-lead">The AWS Student Builder Group at NIU is a student-led community where students explore Amazon Web Services, build real projects, and prepare for cloud careers — together.</p>
@@ -57,7 +62,7 @@
     <!-- FACT STRIP (verified facts only) -->
     <section class="fact-strip" aria-label="Group facts">
       <div class="container fact-grid">
-        <div class="fact"><span class="fact-num">6</span><span class="fact-label">Core team members</span></div>
+        <div class="fact"><span class="fact-num" id="stat-team">6</span><span class="fact-label">Core team members</span></div>
         <div class="fact"><span class="fact-num">18 Nov 2026</span><span class="fact-label">First event, NIU campus</span></div>
         <div class="fact"><span class="fact-num">All NIU students</span><span class="fact-label">Welcome, no experience needed</span></div>
       </div>
@@ -229,6 +234,9 @@
     <p class="footer-copy">&copy; <span id="year">2026</span> AWS Student Builder Group, Noida International University.</p>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

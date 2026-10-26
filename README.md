@@ -4,6 +4,12 @@ A single-page website for SAMIR's AWS Student Builder Group at NIU.
 Built 2026-10-26 with the UI/UX Pro Max skill (Dark Mode OLED design system:
 background `#0F172A`, AWS orange `#FF9900` accent, IBM Plex Sans / JetBrains Mono).
 
+v2 (2026-10-26): interactive 3D hero (procedural Three.js shapes + particles,
+mouse parallax — no model files, so the page stays fast) and GSAP scroll
+reveals + hero intro + team counter, following the skill's motion rules:
+subtle 8–16px reveals, 1–2 key moving elements per view, full
+prefers-reduced-motion support, and content visible by default without JS.
+
 ## Run locally
 
 Open `index.html` in any browser — no build step, no dependencies.
